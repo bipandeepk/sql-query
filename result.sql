@@ -1,0 +1,1 @@
+SELECT extract(year from Order_date ) as years, to_char (Order_date,'Mon') as months,sum(Sales) as TotalSalesFROM ProductsGROUP BY 1,2ORDER BYTotalSales DESC
